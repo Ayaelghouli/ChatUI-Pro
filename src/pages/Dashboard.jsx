@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import Navbar from '../components/Navbar'
 
 function Dashboard() {
   const { name, avatar } = useSelector(
@@ -16,6 +17,7 @@ function Dashboard() {
     new Date().toLocaleTimeString()
 
   return (
+    <Navbar />
     <div className="dashboard">
       <h1>🏥 NeoCare Medical Hub</h1>
 
